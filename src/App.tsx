@@ -12,7 +12,7 @@ const DESCRIPTORS = [
     'a legacy software retirer',
     'a two-time vgdev project lead',
     'a code janitor',
-    "i'm from chicago",
+    'born and raised in chicago',
     'i write tests first (at work)',
     'i pair-program (at work)',
     'a unity developer',
