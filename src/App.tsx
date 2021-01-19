@@ -1,6 +1,5 @@
 import githubIcon from './icons/github.png'
 import resumeIcon from './icons/resume.png'
-import resume from './AndyXueResume.pdf'
 
 import Typewriter from 'typewriter-effect'
 import shuffle from 'shuffle-array'
@@ -34,7 +33,7 @@ function App() {
         <div className='flex h-screen'>
             <div className='m-auto'>
                 <h1 className='text-gray-100 text-5xl text-center m-1'>
-                    hey, i'm andy
+                    hey i'm andy
                 </h1>
                 <div className='text-center m-1'>
                     <Typewriter
@@ -62,7 +61,11 @@ function App() {
                                 alt='github logo'
                             />
                         </a>
-                        <a href={resume} rel='noreferrer' target='_blank'>
+                        <a
+                            href={process.env.PUBLIC_URL + '/AndyXueResume.pdf'}
+                            rel='noreferrer'
+                            target='_blank'
+                        >
                             <img
                                 className='mx-auto ml-4 inline'
                                 width={64}
