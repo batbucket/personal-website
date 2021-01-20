@@ -21,8 +21,6 @@ const DESCRIPTORS = [
     'a socket.io enthusiast',
     "i'm trying to learn python",
     'a personal finance fanatic',
-    'a passive investor',
-    'an active investor',
     'this website was made with tailwind css',
     "a fantasy writer (don't ask)",
 ]
