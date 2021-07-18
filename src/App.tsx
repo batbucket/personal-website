@@ -1,6 +1,3 @@
-import githubIcon from './icons/github.png'
-import resumeIcon from './icons/resume.png'
-
 import Typewriter from 'typewriter-effect'
 import shuffle from 'shuffle-array'
 
@@ -9,20 +6,19 @@ const DESCRIPTORS = [
     'a game developer',
     'a georgia tech grad',
     'a legacy software retirer',
-    'a two-time vgdev project lead',
     'a code janitor',
-    'born and raised in chicago',
     'i write tests first (at work)',
     'i pair-program (at work)',
     'a unity developer',
     'a react developer',
     'my favorite language is c#',
     'my favorite language is typescript',
+    'my favorite language is javascript (when leetcoding)',
+    'next.js is pretty cool',
     'a socket.io enthusiast',
-    "i'm trying to learn python",
     'a personal finance fanatic',
     'this website was made with tailwind css',
-    "a fantasy writer (don't ask)",
+    'a top secret fantasy writer',
 ]
 shuffle(DESCRIPTORS)
 
@@ -47,39 +43,23 @@ function App() {
                 <div className='m-5'>
                     <div className='flex justify-center'>
                         <a
+                            className='text-blue-400 hover:text-blue-600 visited:text-purple-400 m-5'
                             href='https://github.com/batbucket'
                             rel='noreferrer'
                             target='_blank'
                         >
-                            <img
-                                className='mx-auto mr-4 inline'
-                                width={64}
-                                height={64}
-                                src={githubIcon}
-                                alt='github logo'
-                            />
+                            github
                         </a>
                         <a
+                            className='text-blue-400 hover:text-blue-600 visited:text-purple-400 m-5'
                             href={process.env.PUBLIC_URL + '/AndyXueResume.pdf'}
                             rel='noreferrer'
                             target='_blank'
                         >
-                            <img
-                                className='mx-auto ml-4 inline'
-                                width={64}
-                                height={64}
-                                src={resumeIcon}
-                                alt='resume icon'
-                            />
+                            resume
                         </a>
                     </div>
                 </div>
-                {/* <h2>skills</h2>
-            <div className='m-8'>
-                <h2>experiences</h2>
-                <h3>home depot</h3>
-            </div>
-            <h2>projects</h2> */}
             </div>
         </div>
     )
